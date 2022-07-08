@@ -180,8 +180,7 @@ BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos7580
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/universal7580-common/sepolicy 
-BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
